@@ -5,7 +5,10 @@ var ticker = -1;
 $(document).ready(function(){
 	$('#all-names').append('<button class="button">Click here</button>');
 	$('#all-names').on('click', '.button', revealName);
-	$('.person').on('click', fadeName);
+	$('#all-names').on('click', '.person', fadeNameDown);
+	$('#all-names').on('click', '.down', fadeNameUp);
+	// $('#all-names').children('.person').on('click', fadeNameDown);
+	// $('#all-names').children('.down').on('click', fadeNameUp);
 
 
 });
@@ -27,10 +30,17 @@ function revealName(){
 	
 	console.log(ticker);
 	
-	}
-
-function fadeName(){
-	$(this).animate({opacity: 0.5});
 }
 
+function fadeNameDown() {
+    $(this).animate({opacity: 0.05});
+    $(this).addClass('down');
+	}
+
+
+
+function fadeNameUp() {
+    $(this).animate({opacity: 1.00});
+    $(this).removeClass('down');
+	};
 
