@@ -1,38 +1,44 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	width: 630px;
+	width: 780px;
 	margin: 0 auto;
 	color: white;
+	background-color: #99ccff;
 }
-
-#all-names{
-
-}
-
 .person {
 	width: 75px;
 	height: 75px;
 	padding: 20px;
-	border: 2px;
-	border-radius: 25%;
 	margin: 5px;
-	background-color: maroon;
 	line-height: 75px;
 	text-align: center;
 	display: inline-block;
+	background-color: #fffacc;
+	color: black;
+	border-top: 15px solid #fffacc;
+	border-right: 15px solid #fffacc;
+	border-left: 15px solid #fffacc;
+	border-radius: 25px;
 }
-
-
+.person:hover {
+	border-top: 15px solid #99ccff;
+	border-right: 15px solid maroon;
+	border-left: 15px solid maroon;
+	border-radius: 0 0 25px 25px;
+	background-color: maroon;
+}
 .button {
+	background-color: #ffff66;
+	color: orange;
 	display: block;
-	margin: 0 auto;
+	margin: 10px auto;
 	height: 100px;
 	width: 100px;
 	border-radius: 100%;
 	font-weight: bold;
+	border: 2px solid orange;
 }
-
 .faded {
-	opacity: 5%,
+	opacity: 0.5,
 }
