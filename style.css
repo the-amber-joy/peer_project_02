@@ -21,8 +21,8 @@ body {
 	line-height: 75px;
 	text-align: center;
 	display: inline-block;
-
 }
+
 
 .button {
 	display: block;
@@ -31,4 +31,8 @@ body {
 	width: 100px;
 	border-radius: 100%;
 	font-weight: bold;
+}
+
+.faded {
+	opacity: 5%,
 }

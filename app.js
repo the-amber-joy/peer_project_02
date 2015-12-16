@@ -14,7 +14,11 @@ function revealName(){
 	var $el = $('#all-names').children().last();
 
 	ticker += 1;
-	$el.parent().append('<div class="person">' + names[ticker] + '</div>');			
+	
+	$el.parent().append('<div class="person">' + names[ticker] + '</div>');
+	$('.person:last').hide();
+	$('.person:last').slideDown();
+
 	
 	if (names[ticker] == undefined){
 		$('.person').remove();
@@ -26,8 +30,7 @@ function revealName(){
 	}
 
 function fadeName(){
-	$('.person').fadeOut//fade to 5%
-
+	$(this).animate({opacity: 0.5});
 }
 
 
