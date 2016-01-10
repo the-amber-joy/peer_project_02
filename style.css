@@ -1,3 +1,11 @@
+/*Clearfix Here*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Clearfix End*/
+
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -8,7 +16,7 @@ body {
 }
 .person {
 	width: 75px;
-	height: 75px;
+	/*height: 75px;*/
 	padding: 20px;
 	margin: 5px;
 	line-height: 75px;
@@ -22,6 +30,7 @@ body {
 	border-radius: 25px;
 }
 .person:hover {
+	color: #99ccff;
 	border-top: 15px solid #99ccff;
 	border-right: 15px solid maroon;
 	border-left: 15px solid maroon;
